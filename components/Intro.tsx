@@ -39,7 +39,7 @@ export function Intro() {
               bg-gradient-to-r from-blue-500 via-indigo-500 to-teal-400 
               bg-clip-text text-transparent font-semibold 
               hover:bg-none hover:text-pink-600 hover:underline transition-colors duration-600"
-            href="/resume"
+            href="/ZichuanYaoResume.pdf"
             target="_blank"
           >
             Resumé
