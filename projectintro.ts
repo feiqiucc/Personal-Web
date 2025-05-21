@@ -1,7 +1,7 @@
 export const projectintro = [
   {
     id: "personal-web",
-    image: "/projects/personalweb.png",
+    image: "/Projects/personalweb.png",
     title: "Personal-Web",
     github: "https://github.com/kenoi1/wato-asd",
     group: "group",
