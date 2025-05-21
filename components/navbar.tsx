@@ -11,7 +11,7 @@ const element = <FontAwesomeIcon icon={faEnvelope} />;
 export function Navbar() {
   const { email, github, linkedin } = links;
   return (
-    <nav className="flex justify-between items-center top-0 py-4 fixed z-10 px-10 backdrop-blur-md w-full">
+    <nav className="flex justify-between items-center top-0 py-4 fixed z-10 px-10 backdrop-blur-md w-full max-w">
       <div className="flex gap-10">
         <Link href="/">
           <Buttonhome />
