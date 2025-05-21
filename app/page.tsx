@@ -10,7 +10,7 @@ export default function Home() {
     setIsFirstImage((prev) => !prev);
   };
   return (
-    <main className="flex-col min-h-screen">
+    <main className="flex-col min-h-screen aspect-[4/3]">
       <img
         src={isFirstImage ? "/motorpic.png" : "/motorpic2.png"}
         alt="sticker"
