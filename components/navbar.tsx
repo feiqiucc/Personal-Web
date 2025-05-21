@@ -16,9 +16,9 @@ export function Navbar() {
         <Link href="/">
           <Buttonhome />
         </Link>
-        <div>
+        <Link href="#proj">
           <Buttonproject />
-        </div>
+        </Link>
       </div>
       <div className="flex items-center gap-5">
         <Link href={`mailto:${email}`}>

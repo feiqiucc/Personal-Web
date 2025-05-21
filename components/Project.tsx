@@ -7,16 +7,13 @@ import { MagicCard } from "./ui/Magiccardproject";
 export function Project() {
   const fprojectList = projectintro;
   return (
-    <div
-      className="px-12 py-12 sm:px-14 flex flex-col gap-8 pt-20"
-      id="project"
-    >
+    <div className="px-12 py-12 sm:px-14 flex flex-col gap-8 pt-20" id="proj">
       <h2 className="font-semibold text-3xl pt-5">Projects</h2>
       <div className="flex gap-12 flex-row flex-wrap justify-between h-fit">
         {fprojectList.map((project, index) => (
           <MagicCard
             key={project.id || index}
-            className="group w-full sm:w-[20rem]"
+            className="group w-full sm:w-[22rem]"
           >
             <div className="h-full w-full flex flex-col p-[0.07rem]">
               <div className="relative w-full h-52 rounded-t-[0.7rem] overflow-hidden">
