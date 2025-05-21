@@ -14,7 +14,7 @@ export default function Home() {
       <img
         src={isFirstImage ? "/motorpic.png" : "/motorpic2.png"}
         alt="sticker"
-        className="absolute top-40 right-30 w-100 h-80 cursor-pointer"
+        className="absolute top-40 right-30 w-100 h-80 cursor-pointer object-cover"
         onClick={handleImageClick}
       />
       <Navbar />
