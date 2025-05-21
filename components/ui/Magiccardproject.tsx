@@ -1,5 +1,5 @@
 "use client";
-
+import { cn } from "@/lib/utils";
 import { motion, useMotionTemplate, useMotionValue } from "motion/react";
 import React, { useCallback, useEffect, useRef } from "react";
 
@@ -74,7 +74,7 @@ export function MagicCard({
   return (
     <div
       ref={cardRef}
-      className={`relative rounded-xl overflow-hidden ${className ?? ""}`}
+      className={cn("group relative flex size-full rounded-xl", className)}
     >
       <div className="absolute inset-px z-10 rounded-xl bg-background" />
       <div className="relative z-30 w-full">{children}</div>
