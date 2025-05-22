@@ -1,9 +1,19 @@
+"use client";
+import { useState } from "react";
 import { Heading } from "./Heading";
 // import ParallaxBackground from "@/components/ui/backgroundpic";
 
 export function Intro() {
+  const [isFirstImage, setIsFirstImage] = useState(true);
+  const handleImageClick = () => setIsFirstImage((prev) => !prev);
   return (
-    <div className="flex gap-14 items-center flex-wrap w-full py-12 px-12 sm:px-14 min-h-screen">
+    <div className="relative flex gap-14 items-center flex-wrap w-full py-12 px-12 sm:px-14 min-h-screen">
+      <img
+        src={isFirstImage ? "/motorpic.png" : "/motorpic2.png"}
+        alt="sticker"
+        className="absolute right-20 top-1/2 transform -translate-y-1/2 w-110 h-110 object-contain cursor-pointer z-0"
+        onClick={handleImageClick}
+      />
       <div className="">
         <div className="flex justify-between gap-10 items-center flex-wrap">
           <Heading />

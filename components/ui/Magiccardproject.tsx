@@ -14,7 +14,7 @@ interface MagicCardProps extends React.HTMLAttributes<HTMLDivElement> {
 export function MagicCard({
   children,
   className,
-  gradientSize = 200,
+  gradientSize = 400,
   gradientColor = "#ffffff88",
   gradientFrom = "#FFC0CB",
   gradientTo = "#9E7AFF",
@@ -45,9 +45,9 @@ export function MagicCard({
       className={`relative group rounded-xl overflow-hidden ${className ?? ""}`}
     >
       <div className="absolute inset-px z-10 rounded-xl bg-background" />
-      <div className="relative z-30 w-full">{children}</div>
+      <div className="relative z-30 bg-white h-[99%] w-[99%]">{children}</div>
       <motion.div
-        className="pointer-events-none absolute inset-px z-20 rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        className="pointer-events-none absolute inset-px z-10 rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         style={{
           background: useMotionTemplate`
             radial-gradient(${gradientSize}px circle at ${mouseX}px ${mouseY}px, ${gradientColor}, transparent 100%)

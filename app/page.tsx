@@ -10,16 +10,12 @@ export default function Home() {
     setIsFirstImage((prev) => !prev);
   };
   return (
-    <main className="flex-col min-h-screen aspect-[4/3]">
-      <img
-        src={isFirstImage ? "/motorpic.png" : "/motorpic2.png"}
-        alt="sticker"
-        className="absolute top-40 right-30 w-100 h-80 cursor-pointer object-cover"
-        onClick={handleImageClick}
-      />
+    <main>
+      <div className="container mx-auto px-10 flex flex-col min-h-fit">
+        <Intro />
+        <Project />
+      </div>
       <Navbar />
-      <Intro />
-      <Project />
     </main>
   );
 }

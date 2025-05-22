@@ -11,7 +11,7 @@ const element = <FontAwesomeIcon icon={faEnvelope} />;
 export function Navbar() {
   const { email, github, linkedin } = links;
   return (
-    <nav className="flex justify-between items-center top-0 py-4 fixed z-10 px-10 backdrop-blur-md w-full max-w">
+    <nav className="flex justify-between items-center top-0 py-4 z-10 px-10 fixed backdrop-blur-md w-full">
       <div className="flex gap-10">
         <Link href="/">
           <Buttonhome />
@@ -22,18 +22,21 @@ export function Navbar() {
       </div>
       <div className="flex items-center gap-5">
         <Link href={`mailto:${email}`}>
-          <FontAwesomeIcon icon={faEnvelope} className="h-6" />
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            className="text-2xl hover:text-foreground"
+          />
         </Link>
         <a href={github} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={faGithub}
-            className="h-6 hover:text-foreground"
+            className="text-2xl hover:text-foreground"
           />
         </a>
         <a href={linkedin} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="h-6 hover:text-foreground"
+            className="text-2xl hover:text-foreground"
           />
         </a>
       </div>
