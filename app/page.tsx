@@ -10,7 +10,7 @@ export default function Home() {
     setIsFirstImage((prev) => !prev);
   };
   return (
-    <main>
+    <main className="bg-gray-100 min-h-screen">
       <div className="container mx-auto px-10 flex flex-col min-h-fit">
         <Intro />
         <Project />
