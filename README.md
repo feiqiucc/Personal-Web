@@ -1,6 +1,6 @@
 # Personal Web
 
-This is my personal web with my hobby and experience. View demo [here](https://tomw.vercel.app)
+This is my personal web with my hobby and experience.
 
 ## Getting Started
 
