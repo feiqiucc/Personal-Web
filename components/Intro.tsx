@@ -18,7 +18,7 @@ export function Intro() {
           <Heading />
         </div>
         <p>
-          currently studying Math at University of Waterloo.
+          currently studying Computational Math at University of Waterloo.
           <br />I am interested in writing code. I enjoy listening to{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-tr from-blue-500 via-sky-400 to-pink-400 font-semibold">
             <a
