@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { Heading } from "./Heading";
-// import ParallaxBackground from "@/components/ui/backgroundpic";
 
 export function Intro() {
   const [isFirstImage, setIsFirstImage] = useState(true);

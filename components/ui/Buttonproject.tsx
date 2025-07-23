@@ -3,7 +3,6 @@ export default function Buttonproject() {
     <button
       style={{
         padding: "8px 12px",
-        backgroundColor: "white",
         color: "black",
         border: "none",
         borderRadius: "4px",
